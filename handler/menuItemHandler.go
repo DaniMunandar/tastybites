@@ -6,7 +6,7 @@ import (
 )
 
 func ViewMenuItems(db *sql.DB) error {
-	rows, err := db.Query("SELECT * FROM MenuItems")
+	rows, err := db.Query("SELECT * FROM menuitems")
 	if err != nil {
 		return err
 	}

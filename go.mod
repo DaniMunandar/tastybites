@@ -1,4 +1,4 @@
-module release5
+module github.com/DaniMunandar/tastybites
 
 go 1.20
 

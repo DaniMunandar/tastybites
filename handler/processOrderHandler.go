@@ -5,7 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 	"os"
-	"release5/entity"
+
+	"github.com/DaniMunandar/tastybites/entity"
 )
 
 func GetOrderValues() (entity.ProcessOrder, error) {

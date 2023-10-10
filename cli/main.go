@@ -1,15 +1,16 @@
-package main
+package tastybites
 
 import (
 	"bufio"
 	"fmt"
 	"log"
 	"os"
-	"release5/config"
-	"release5/handler"
+
+	"github.com/DaniMunandar/tastybites/config"
+	"github.com/DaniMunandar/tastybites/handler"
 )
 
-func main() {
+func Start() {
 	scanner := bufio.NewScanner(os.Stdin)
 	db, err := config.GetDB()
 	if err != nil {

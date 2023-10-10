@@ -6,7 +6,8 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"release5/entity"
+
+	"github.com/DaniMunandar/tastybites/entity"
 )
 
 func GetEmployeeInput() (entity.Employee, error) {

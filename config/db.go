@@ -7,7 +7,7 @@ import (
 )
 
 func GetDB() (*sql.DB, error) {
-	connStr := "mysql -hcontainers-us-west-106.railway.app -uroot -pRphKHVPwvaPP6ZFCi5dU --port 6042 --protocol=TCP railway"
-	db, err := sql.Open("mysql", connStr)
+	dburl := "root:RphKHVPwvaPP6ZFCi5dU@tcp(containers-us-west-106.railway.app:6042)/railway"
+	db, err := sql.Open("mysql", dburl)
 	return db, err
 }
